@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title> using emmet</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script
+   src="https://code.jquery.com/jquery-2.2.4.min.js"
+   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script> 
+  <script type="text/javascript" src="index.js"></script>
+	
+	
+</head>
+<body>
+
+
+<nav>
+	<ul>
+		<!-- link in list item and want 4 of it -->
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#resume">Resume</a></li>
+		<li><a href="#projects">Projects</a></li>
+	</ul>
+
+</nav>
+<button class="menu-icon">☰</button>
+<!-- icon is from :  https://www.abeautifulsite.net/the-unicode-character-for-menu-icons -->
+
+
+<!-- section is like p or div tag, when you click page goes to section with id about home, etc -->
+<section id="home">
+	<h2>Home</h2>
+	<p>
+		Instant - It represents a timestamp
+    LocalDate - a date without time e.g. 2014-01-14. It can be used to store birthday, anniversary, date of joining etc.
+    LocalTime - represents time without a date
+    LocalDateTime - is used to combine date and time, but still without any offset or time-zone
+    ZonedDateTime - a complete date-time with time-zone and resolved offset from UTC/Greenwich
+
+
+Read more: http://javarevisited.blogspot.com/2015/03/20-examples-of-date-and-time-api-from-Java8.html#ixzz4OKbnwSW8
+ How to do Date and Time in Java 8
+Someone asked me what is the best way to learn a new library? My answer was, use that library as if you are using it for your real project. There are too many real requirements in a real project, which prompts a developer to explore and learn a new library. In short, it's a task which motivates you to explore and learn new API. Java 8's new date and time API is no different.
+	</p>
+	
+
+</section>
+<section id="about">
+	<h2>About</h2>
+	<p>
+		I have created a list of 20 task-based examples to learn this new gem from Java 8. We will start with simple task e.g. how to represent today's date using Java 8 Date Time library then move forward to create date with time and time zone, exploring how to do more real-world task like for creating a reminder application how to find number of days to important dates e.g. birthday, anniversary, next bill date, next premium date, your credit card expiry etc.
+	</p>
+	
+
+</section>
+<section id="resume">
+	<h2>Resume</h2>
+	<p>Example 1 - How to get today's date in Java 8
+Java 8 has  a class called LocalDate which can be used to represent today's date. This class is little different than java.util.Date because it only contains the date, no time part. So anytime if you just to represent date without time, use this class.
+
+LocalDate today = LocalDate.now();
+System.out.println("Today's Local date : " + today);
+
+Output
+Today's Local date : 2014-01-14
+</p>
+
+</section>
+<section id="projects">
+	<h2>Projects</h2>
+	<p>You can see that it has created today's date without any time information. It also prints the date in a nicely formatted way, unlike previous Date class which print data non-formatted. You can also see Java SE 8 for Really impatient to learn about different ways to create LocalDate in Java 8.
+
+Read more: http://javarevisited.blogspot.com/2015/03/20-examples-of-date-and-time-api-from-Java8.html#ixzz4OKc95GCR
+   </p>
+
+
+</section>
+
+
+
+
+
+
+
+</body>
+</html>
